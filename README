@@ -1,0 +1,9 @@
+Please rename the checked out project directory form 'comfy-django-example' to 'comfy_django_example' before trying to run the project. Run the project by first starting CouchDB
+
+    couchdb
+
+and then run the Django project.
+
+    python manage.py runserver
+
+And thats all there is to it.
