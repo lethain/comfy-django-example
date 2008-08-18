@@ -1,0 +1,25 @@
+<html> <head>
+<title>Comfy Django</title>
+</head>
+
+<body>
+<h1>CouchDB in Django</h1>
+
+<form method="post" action=".">
+<table>
+  <tr>
+    <td> Title for new document </td>
+    <td><input type="text" name="title"></td>
+    <td><input type="submit"></td>
+  </tr>
+</table>
+</form>
+<hr>
+<ol>
+  {% for row in rows %}
+  <li>
+  <a id="title" href="/doc/{{ row }}/">{{ row }}</a>
+  </li>
+  {% endfor %}
+</ol>
+</body> </html>
